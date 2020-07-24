@@ -19,13 +19,13 @@ try:
 	else:
 		text2 = soup.find("h2",text="Deskripsi").findNext('span')
 		print(text2.get_text())
-		if len(text2)<40:
+		if len(text2.get_text())<40:
 			print(text2.findNext('span').get_text())
 			text2 = text2.findNext('span')
-		if len(text2)<40:
+		if len(text2.get_text())<40:
 			print(text2.findNext('span').get_text())
 			text2 = text2.findNext('span')
-		if len(text2)<40:
+		if len(text2.get_text())<40:
 			print(text2.findNext('span').get_text())
 			text2 = text2.findNext('span')
 except:
